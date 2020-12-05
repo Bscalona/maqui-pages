@@ -1,0 +1,22 @@
+.content-large-modal {
+  display: flex;
+  background: #ffffff;
+  height: 90%;
+  width: 90%;
+  background-image: url("../../assets//paper.jpg");
+  background-attachment: scroll;
+  background-size: 60%;
+  background-position: inherit;  
+  flex-direction: column;
+  background-repeat: repeat;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.content-top-title {
+  font-family: "Baloo";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #000028;
+}

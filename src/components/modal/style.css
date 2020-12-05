@@ -1,0 +1,125 @@
+.background-modal-helper {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(14, 14, 30, 0.8);
+  z-index: 5;
+}
+
+.content-modal-helper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  height: 15rem;
+  position: relative;
+  width: 20%;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.header-bar-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000028;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  height: 3rem;
+  padding: 0 2%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.title-bar-modal {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.body-modal-helper {
+  display: flex;
+  justify-content: space-around;
+  height: 20rem;
+  padding: 1rem;
+  width: 100%;
+}
+.title-section-modal {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 5px 13%;
+  color: #1ead5f;
+}
+.text-section-modal {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000028;
+}
+
+.box-modal-option-left {
+  background: #d7eedf;
+  border-radius: 5px;
+  background-repeat: round;
+  height: 15rem;
+  width: 45%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.box-modal-option-left:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 40, 0.3);
+  cursor: pointer;
+}
+
+.box-text-modal-option {
+  margin: 0 6%;
+}
+.img-help-image {
+  height: 5rem;
+}
+
+.close {
+  font-size: 16px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .background-modal-helper {
+    height: 140vh;
+  }
+
+  .content-modal-helper {
+    width: 80%;
+  }
+}

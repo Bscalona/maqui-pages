@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+.content-home-page {
+  display: flex;
+  background: linear-gradient(180deg, #d7eedf, #fff);
+  padding: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: auto;
+}
+.left-content-home {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 20rem;
+}
+
+.right-content-home {
+  display: flex;
+  width: 50%;
+  position: relative;
+  height: 20rem;
+}
+
+.title-page-principal {
+  font-family: Baloo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  color: #000028;
+}
+
+.text-page-principal {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #000028;
+}
+
+.input-value-maqui {
+  border: none;
+  font-family: Poppins;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  font-style: normal;
+  padding: 0 3px;
+  font-size: 1rem;
+  height: 1.8rem;
+  width: 12rem;
+}
+.input-group-text-home {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.input-value-maqui:active,
+.input-value-maqui:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.button-accept-maqui {
+  border-radius: 5px;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 12px;
+  color: white;
+  background: #000028;
+  outline: none;
+  height: 1.8rem;
+  width: 5rem;
+  border: none;
+}
+
+.image-maqui-home {
+  height: 15rem;
+  width: 15rem;
+  object-fit: contain;
+}
+.mtop3 {
+  margin-top: 3rem;
+}
+
+.content-balloon-top {
+  position: absolute;
+  top: 0;
+}
+
+@media (max-width: 767px) {
+  .content-home-page {
+    display: flex;
+    background: linear-gradient(180deg, #d7eedf, #fff);
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .left-content-home {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .right-content-home {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+
+  .title-page-principal {
+    font-family: Baloo;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6rem;
+    color: #000028;
+    margin-bottom: 0.5rem;
+  }
+
+  .text-page-principal {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #000028;
+    text-align: center;
+  }
+
+  .input-value-maqui {
+    border: none;
+    font-family: Poppins;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-style: normal;
+    padding: 0 3px;
+    font-size: 1rem;
+    height: 1.8rem;
+    width: 12rem;
+  }
+  .input-group-text-home {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .input-value-maqui:active,
+  .input-value-maqui:focus {
+    border: none !important;
+    outline: none !important;
+  }
+
+  .button-accept-maqui {
+    border-radius: 5px;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 12px;
+    color: white;
+    background: #000028;
+    outline: none;
+    height: 1.8rem;
+    width: 5rem;
+    border: none;
+  }
+
+  .image-maqui-home {
+    height: 30vh;
+    width: 35vh;
+    object-fit: contain;
+  }
+  .mtop3 {
+    margin-top: 3rem;
+  }
+
+  .content-balloon-top {
+    position: absolute;
+    top: 0;
+  }
+  /* Header /*/
+  .content-header-bar {
+    display: flex;
+    height: 4rem;
+    overflow: hidden;
+    align-items: center;
+    background: #000028;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .icon-white-mobil {
+    color: white;
+    display: block;
+    font-size: 3.5vh;
+    margin: 1vh;
+  }
+
+  .left-img-header {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin: 0 1vh;
+  }
+
+  .img-logo-header {
+    height: 10vh;
+    width: 9vh;
+  }
+  .right-header-bar {
+    margin: 0 1rem;
+  }
+
+  .options-menu-bar {
+    display: none;
+  }
+
+  .capitalize {
+    font-size: 3vh !important;
+  }
+
+  .li-menu-mobil {
+    display: flex;
+    top: 2.8vh;
+    right: 0;
+    position: absolute;
+    background: #00002c;
+    padding: 1vh;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+    z-index: 6;
+  }
+  .li-options-mobil {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .options-mobil-bar {
+    font-family: Baloo;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.5vh !important ;
+    color: #fff;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+}

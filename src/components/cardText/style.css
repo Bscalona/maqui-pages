@@ -1,0 +1,9 @@
+.content-card-text {
+  height: 8rem;
+  width: 45%;
+  background: white;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}

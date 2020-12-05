@@ -1,0 +1,97 @@
+.vineta {
+  position: relative;
+  width: 0rem;
+  height: 4rem;
+}
+
+.globo {
+  position: absolute;
+  font-family: Poppins;
+  color: #000028;
+  font-weight: 400;
+  font-size: 12px;
+  border-radius: var(--borde);
+  padding: var(--borde);
+  --borde: 1em;
+  z-index: 1;
+  background-color: white;
+  filter: drop-shadow(0px 0px 1px black);
+}
+
+.globo.i {
+  padding: 1rem;
+  text-align: center;
+  top: 20px;
+  left: 180px;
+  width: 8rem;
+}
+
+.globo.ii {
+  width: 150px;
+  top: 100px;
+  left: 20px;
+}
+
+.globo.iii {
+  width: 150px;
+  top: 60px;
+  right: 10px;
+}
+
+.globo.iv {
+  width: 150px;
+  bottom: 10px;
+  left: 40%;
+}
+
+.globo::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: var(--colita);
+  height: var(--colita);
+}
+
+.globo.abajo-derecha::before {
+  --colita: 20px;
+  left: 50%;
+  bottom: calc(var(--colita) / -1.5);
+  transform: skewY(30deg) rotateZ(-30deg);
+  border-radius: 0 0 0 10em;
+  box-shadow: inset calc(var(--colita) / 2) calc(var(--colita) / 3) 0 0 white;
+}
+
+.globo.derecha-arriba::before {
+  --colita: 20px;
+  top: 10px;
+  right: calc(var(--colita) / -1.5);
+  transform: skewY(30deg) rotateZ(-120deg);
+  border-radius: 0 0 0 10em;
+  box-shadow: inset calc(var(--colita) / 2) calc(var(--colita) / 3) 0 0 white;
+}
+
+.globo.abajo-izquierda::before {
+  --colita: 50px;
+  left: 10px;
+  bottom: calc(var(--colita) / -1.5);
+  border-radius: 0 0 10em 0;
+  box-shadow: inset calc(var(--colita) / -3) calc(var(--colita) / 4) 0 0 white;
+}
+
+.globo.izquierda-arriba::before {
+  --colita: 20px;
+  top: 0;
+  left: calc(var(--colita) / -1.5);
+  transform: rotateZ(-60deg);
+  border-radius: 10em 0 0 0;
+  color: white;
+  box-shadow: inset calc(var(--colita) / 3) calc(var(--colita) / -4) 0 0;
+}
+
+@keyframes cambio-color {
+  45%,
+  55% {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+  }
+}

@@ -1,0 +1,241 @@
+.content-dashboard-screen {
+  display: flex;
+  height: 30rem;
+  width: 100%;
+  background: linear-gradient(180deg, #d7eedf, #fff);
+  flex-direction: column;
+}
+.content-time-horary {
+  margin: 1rem;
+}
+.small-img{
+  height: 5rem;
+}
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+.title-page-principal {
+  font-family: "Baloo";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  color: #000028;
+}
+.second-content-dashboard {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 70%;
+}
+.left-content-dashboard {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.title-wish-principal {
+  font-family: "Baloo";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  width: 100%;
+}
+
+.white {
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  cursor: pointer;
+}
+.content-play-music {
+  width: 80;
+  display: flex;
+  align-items: center;
+}
+
+.card-content-dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/cosmos.jpg");
+  height: 8rem;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 8px;
+  width: 80%;
+}
+.background-cosmos {
+  background-image: url("../../assets/galaxy.png");
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+}
+
+.right-content-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.content-playlist-avocado {
+  background: #ffffff;
+  height: 50%;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+}
+.content-playlist-avocado:before,
+.content-playlist-avocado:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  margin: 0.5rem;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: rgb(206, 13, 13);
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.content-playlist-avocado:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.message-daily-dashboard {
+  font-family: "Coming Soon";
+  display: flex;
+  padding: 6px;
+  position: absolute;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #000028;
+  width: 100%;
+}
+.date-text-small {
+  font-family: "Shadows Into Light";
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  height: 100%;
+  font-style: normal;
+  font-weight: 600;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #000000;
+  width: 100%;
+}
+.content-playlist-card-avocado {
+  height: 20rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 80%;
+  position: relative;
+  background: #fec6ad;
+  background-image: url("../../assets/Background.jpg");
+  background-attachment: fixed;
+  background-position: right;
+  background-size: 40% 45%;
+  background-repeat: no-repeat;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plain-bg {
+  background: #fec6ad;
+}
+.plain-bg > img {
+  transition: all 5s !important;
+  opacity: 1 !important;
+}
+.content-playlist-card-avocado > img {
+  opacity: 0;
+}
+
+.img-spotify-code {
+  height: 4rem;
+  margin-bottom: 0.5rem;
+  left: 0;
+  width: 12rem;
+  opacity: 0;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .content-dashboard-screen {
+    height: 100vh;
+  }
+
+  .second-content-dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-content-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .content-playlist-avocado {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+  }
+  .title-wish-principal {
+    font-size: 3vh;
+  }
+  .right-content-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .content-playlist-card-avocado {
+    width: 100%;
+    background-attachment: initial;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .card-content-dashboard {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .img-spotify-code {
+    width: 30vh;
+  }
+}
