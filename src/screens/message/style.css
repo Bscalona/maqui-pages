@@ -31,14 +31,14 @@ textarea {
 }
 
 @media (max-width: 767px) {
-.content-message-dashboard{
-  height: 70vh;
-}
-.center-message-send{
-width: 80%;
+  .content-message-dashboard {
+    height: 70vh;
+  }
+  .center-message-send {
+    width: 80%;
 
-height: 90%;
-}
+    height: 90%;
+  }
 
   textarea {
     resize: none;
@@ -51,6 +51,4 @@ height: 90%;
     width: 40%;
     height: 2rem;
   }
-
-
 }
