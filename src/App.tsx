@@ -15,12 +15,14 @@ import {
   DASHBOARD,
   REDEEM_CODE,
   PLAYLIST_AVOCADO,
+  MESSAGE,
   GAMES,
 } from "./routes";
 import { getUserLogin, history } from "./utils/functions";
 import Redeem from "./screens/redeem/index";
 import PlaylistMusic from "./screens/playMusic";
 import Game from "./screens/game/index";
+import Message from './screens/message/index';
 const AppContent: React.SFC<RouteComponentProps> = ({ history }) => {
   useEffect(() => {
     const user = getUserLogin();
@@ -35,6 +37,7 @@ const AppContent: React.SFC<RouteComponentProps> = ({ history }) => {
       <Route exact path={REDEEM_CODE} component={Redeem}></Route>
       <Route exact path={GAMES} component={Game}></Route>
       <Route exact path={PLAYLIST_AVOCADO} component={PlaylistMusic}></Route>
+      <Route exact path={MESSAGE} component={Message}></Route>      
       <Route render={() => <Redirect to={DASHBOARD} />}></Route>
     </Switch>
   );

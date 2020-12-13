@@ -1,0 +1,56 @@
+.content-message-dashboard {
+  display: flex;
+  background: linear-gradient(180deg, #d7eedf, #fff);
+  padding: 2rem;
+  height: 30rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.center-message-send {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  height: 60%;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+  width: 60%;
+  height: 80%;
+  font-family: Poppins;
+  font-size: 1rem;
+}
+.tsx {
+  width: 40%;
+  height: 2rem;
+}
+
+@media (max-width: 767px) {
+.content-message-dashboard{
+  height: 70vh;
+}
+.center-message-send{
+width: 80%;
+
+height: 90%;
+}
+
+  textarea {
+    resize: none;
+    width: 80%;
+    height: 90%;
+    font-family: Poppins;
+    font-size: 1rem;
+  }
+  .tsx {
+    width: 40%;
+    height: 2rem;
+  }
+
+
+}

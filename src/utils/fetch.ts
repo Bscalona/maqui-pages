@@ -22,6 +22,7 @@ const apiFetch = async (url: string, method: "GET") => {
 export const sendMessage = async (message: string) => {
   try {
     const resolve = await apiFetch(message, "GET");
+    return resolve;
   } catch (err) {
     throw err;
   }

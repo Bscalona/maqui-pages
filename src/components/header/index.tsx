@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "../../assets/Logo.png";
 import "./style.css";
 import { getUserLogin } from "../../utils/functions";
-import { REDEEM_CODE, DASHBOARD, GAMES } from "../../routes";
+import { REDEEM_CODE, DASHBOARD, GAMES, MESSAGE } from '../../routes';
 import { Link } from "react-router-dom";
 import { ImMenu } from "react-icons/im";
 
@@ -10,7 +10,7 @@ import { BiArrowToTop } from "react-icons/bi";
 
 export interface HeaderProps {}
 
-const Header: React.SFC<HeaderProps> = () => {
+const Header: React.FC<HeaderProps> = () => {
   const [active, setActive] = useState("1");
   const [reload, setReload] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
@@ -101,6 +101,14 @@ const Header: React.SFC<HeaderProps> = () => {
                   >
                     Canjear codigo
                   </Link>
+                  <Link
+                    to={MESSAGE}
+                    className={getClassMobil("4")}
+                    onClick={() => ChangeMenuMobil("4")}
+                  >
+                    Contar secreto
+                  </Link>
+
                   <li className={getClassMobil("3")} onClick={clearCache}>
                     Adios Maqui
                   </li>

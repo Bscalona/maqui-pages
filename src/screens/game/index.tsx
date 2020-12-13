@@ -23,14 +23,14 @@ const Game: React.SFC<GameProps> = () => {
     const isDayGame = localStorage.getItem("day_Game") || undefined;
     if (!isDayGame) {
       localStorage.setItem("day_Game", today);
-      localStorage.setItem("lives_Game", "3");
+      localStorage.setItem("lives_Game", "5");
     } else {
       if (isDayGame && today === isDayGame) {
         const life = localStorage.getItem("lives_Game") || 0;
         if (life) setLives(parseInt(life));
       } else if (isDayGame && today !== isDayGame) {
         localStorage.setItem("day_Game", today);
-        localStorage.setItem("lives_Game", "3");
+        localStorage.setItem("lives_Game", "5");
       }
     }
   }, []);
