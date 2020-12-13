@@ -103,8 +103,8 @@ const Header: React.FC<HeaderProps> = () => {
                   </Link>
                   <Link
                     to={MESSAGE}
-                    className={getClassMobil("4")}
-                    onClick={() => ChangeMenuMobil("4")}
+                    className={getClassMobil("5")}
+                    onClick={() => ChangeMenuMobil("5")}
                   >
                     Contar secreto
                   </Link>
